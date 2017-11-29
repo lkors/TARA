@@ -1,0 +1,44 @@
+body {
+  background-color: #F7F4F0;
+  color: #000;
+  font-family: 'Roboto', sans-serif; }
+
+h3 {
+  font-weight: 900; }
+
+p {
+  font-size: 14px; }
+
+.white {
+  background-color: white; }
+
+header .header-bar {
+  background-color: #4D4D4D;
+  height: 33px; }
+  header .header-bar button {
+    height: 33px;
+    background-color: #E6E6E6;
+    border-radius: 0;
+    padding: 0 11px; }
+    header .header-bar button:hover {
+      background-color: #d9d9d9; }
+  header .header-bar a {
+    color: #FFF;
+    line-height: 33px;
+    font-size: 10px; }
+    header .header-bar a:first-child {
+      padding-right: 18px; }
+
+header .logo-bar {
+  padding: 12px 0;
+  background-color: #FFF; }
+
+.tara-logo {
+  background-image: url(/images/logo.svg);
+  background-repeat: no-repeat;
+  height: 48px; }
+
+.container {
+  max-width: 620px; }
+
+/*# sourceMappingURL=style.css.map */
