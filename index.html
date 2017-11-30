@@ -56,65 +56,104 @@
 
 
 <body>
-  <div class="container">
-    <h3>Vali tuvastamismeetod</h3>
+  <div id="wrap">
+    <div id="main" class="container clear-top">
+      <h3>Vali tuvastamismeetod</h3>
 
-    <div id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="method-block white row hidden-xs" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <div class="col-md-3 col-sm-3">
-          <div class="id-card"></div>
-        </div>
-        <div class="col-md-8 col-sm-8">
-          <h3>ID-Kaart</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
-        </div>
-        <div class="col-md-1 col-sm-1">
-          <i class="fa fa-chevron-down pull-right method-chevron"></i>
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="method-block white row hidden-xs" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <div class="col-md-3 col-sm-3">
+            <div class="id-card"></div>
+          </div>
+          <div class="col-md-8 col-sm-8">
+            <h3>ID-Kaart</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
+          </div>
+          <div class="col-md-1 col-sm-1">
+            <i class="fa fa-chevron-down pull-right method-chevron"></i>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="methodIDCard">
-      <div class="white hidden-xs method-block-collapsible">
-        <p>Sisesta kaart lugejasse ja vajuta "Sisene"</p>
-        <button class="primary" type="button" name="button">Sisene</button>
+      <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="methodIDCard">
+        <div class="white hidden-xs method-block-collapsible">
+          <p>Sisesta kaart lugejasse ja vajuta "Sisene"</p>
+          <button class="primary" type="button" name="button">Sisene</button>
+        </div>
       </div>
-    </div>
 
-    <div id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="method-block white row" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMob" aria-expanded="true" aria-controls="collapseMob">
-        <div class="col-md-3 col-sm-3">
-          <div class="mob-id"></div>
-        </div>
-        <div class="col-md-8 col-sm-8">
-          <h3>Mobiil-ID</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
-        </div>
-        <div class="col-md-1 col-sm-1">
-          <i class="fa fa-chevron-down pull-right method-chevron"></i>
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="method-block white row" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMob" aria-expanded="true" aria-controls="collapseMob">
+          <div class="col-md-3 col-sm-3 col-xs-2">
+            <div class="mob-id"></div>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-9">
+            <h3>Mobiil-ID</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
+          </div>
+          <div class="col-md-1 col-sm-1 col-xs-1">
+            <i class="fa fa-chevron-down pull-right method-chevron"></i>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="collapseMob" class="collapse" role="tabpanel" aria-labelledby="methodIDCard">
-      <div class="white hidden-xs method-block-collapsible">
-        <p>Sisesta kaart lugejasse ja vajuta "Sisene"</p>
-        <button class="primary" type="button" name="button">Sisene</button>
+      <div id="collapseMob" class="collapse" role="tabpanel" aria-labelledby="methodIDCard">
+        <div class="white method-block-collapsible">
+          <p>Sisesta kaart lugejasse ja vajuta "Sisene"</p>
+          <button class="primary" type="button" name="button">Sisene</button>
+        </div>
       </div>
-    </div>
 
-    <a href="#" class="back-btn row">
+      <a href="#" class="back-btn row">
       <i class="fa fa-chevron-left fa-fw"></i>Tagasi teenusepakkuja juurde
     </a>
 
 
+    </div>
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="/js/script.js"></script>
+    
+    <script>
+      function setFooterStyle() {
+        var docHeight = $(window).height();
+        var footerHeight = $('#footer').outerHeight();
+        var footerTop = $('#footer').position().top + footerHeight;
+        if (footerTop < docHeight) {
+          $('#footer').css('margin-top', (docHeight - footerTop) + 'px');
+        } else {
+          $('#footer').css('margin-top', '');
+        }
+        $('#footer').removeClass('invisible');
+      }
+      $(document).ready(function() {
+        setFooterStyle();
+        window.onresize = setFooterStyle;
+      });
+    </script>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <hr>
+          <div class="col-md-4 col-md-offset-2 col-md-push-6 col-sm-4 col-sm-offset-2 col-sm-push-6">
+            <ul class="footer-links">
+              <li>
+                <a href="#">Raporteeri viga</a>
+              </li>
+              <li>
+                <a href="#">TARA-st lähemalt</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-md-pull-6 col-sm-6 col-sm-pull-6">
+            <div class="eu-logo"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
   </div>
-
-
-  <script type="text/javascript" src="/js/jquery.min.js"></script>
-  <!-- jQuery -->
-  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-  <!-- Bootstrap -->
-  <script type="text/javascript" src="/js/script.js"></script>
-
 </body>
 
 </html>

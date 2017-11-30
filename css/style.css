@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   background-color: #F7F4F0;
   color: #000;
@@ -16,8 +15,18 @@ p {
 .container {
   max-width: 620px; }
 
-button.primary  {
+button.primary {
   background-color: blue; }
+
+ul {
+  list-style-type: none; }
+  ul li {
+    line-height: 2; }
+    ul li a {
+      color: #006833;
+      text-decoration: none; }
+      ul li a:hover, ul li a:focus {
+        color: #004f26; }
 
 header .header-bar {
   background-color: #4D4D4D;
@@ -51,6 +60,9 @@ header .logo-bar {
   margin-top: 20px;
   padding: 0 15px 15px;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.35); }
+  @media screen and (max-width: 766px) {
+    .method-block {
+      padding: 0 10px 10px; } }
   .method-block .id-card {
     background-image: url("/images/idkaart.svg");
     background-repeat: no-repeat;
@@ -62,8 +74,14 @@ header .logo-bar {
     height: 67px;
     margin-top: 2em;
     margin-left: 2em; }
+    @media screen and (max-width: 766px) {
+      .method-block .mob-id {
+        margin-left: 0; } }
   .method-block .method-chevron {
     margin-top: 3.5em; }
+    @media screen and (max-width: 766px) {
+      .method-block .method-chevron {
+        margin-top: 20px; } }
 
 .method-block-collapsible {
   border-top: 1px rgba(0, 0, 0, 0.35) solid;
@@ -72,5 +90,36 @@ header .logo-bar {
 
 .back-btn {
   color: #000; }
+
+footer {
+  padding-bottom: 20px; }
+  footer #footer.container {
+    display: inline; }
+  footer hr {
+    border-top: 0.5px solid #999999;
+    margin-bottom: 5px; }
+  footer .row {
+    margin-left: 0;
+    margin-right: 0; }
+
+.eu-logo {
+  background-image: url("/images/EU.svg");
+  background-repeat: no-repeat;
+  height: 29px;
+  margin-left: -15px;
+  margin-top: 1.5em; }
+
+ul.footer-links {
+  text-align: right;
+  list-style-position: inside;
+  padding-left: 0;
+  margin-right: -15px;
+  margin-left: -15px; }
+  ul.footer-links li:first-child {
+    padding-bottom: 4px; }
+  @media screen and (max-width: 766px) {
+    ul.footer-links {
+      list-style: none;
+      text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,8 @@ $dark-grey: #4D4D4D;
 $light-grey: #E6E6E6;
 $black: #000;
 $white: #FFF;
+$green: #006833;
+$light-brown: #999999;
 
 body {
   background-color: $background-color;
@@ -26,8 +28,24 @@ p {
   max-width: 620px;
 }
 
-button.primary {
+button.primary {
   background-color: blue;
+}
+
+ul {
+  list-style-type: none;
+
+  li {
+    line-height: 2;
+
+    a {
+      color: $green;
+      text-decoration: none;
+      &:hover, &:focus {
+        color: darken($green, 5%);
+      }
+    }
+  }
 }
 
 header {
@@ -75,6 +93,9 @@ header {
   margin-top: 20px;
   padding: 0 15px 15px;
   box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.35);
+  @media screen and (max-width: 766px) {
+    padding: 0 10px 10px;
+  }
 
   .id-card {
     background-image: url("/images/idkaart.svg");
@@ -89,10 +110,16 @@ header {
     height: 67px;
     margin-top: 2em;
     margin-left: 2em;
+    @media screen and (max-width: 766px) {
+      margin-left: 0;
+    }
   }
 
   .method-chevron {
     margin-top: 3.5em;
+    @media screen and (max-width: 766px) {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -104,4 +131,43 @@ header {
 
 .back-btn {
   color: $black;
+}
+
+footer {
+  padding-bottom: 20px;
+
+  #footer.container {
+    display: inline;
+  }
+  hr {
+    border-top: 0.5px solid $light-brown;
+    margin-bottom: 5px;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.eu-logo {
+  background-image: url("/images/EU.svg");
+  background-repeat: no-repeat;
+  height: 29px;
+  margin-left: -15px;
+  margin-top: 1.5em;
+}
+
+ul.footer-links {
+  text-align: right;
+  list-style-position: inside;
+  padding-left: 0;
+  margin-right: -15px;
+  margin-left: -15px;
+  li:first-child {
+    padding-bottom: 4px;
+  }
+  @media screen and (max-width: 766px) {
+    list-style: none;
+    text-align: left;
+  }
 }
