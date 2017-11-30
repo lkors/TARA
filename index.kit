@@ -7,8 +7,61 @@
   <div class="container">
     <h3>Vali tuvastamismeetod</h3>
 
+    <div id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="method-block white row hidden-xs" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <div class="col-md-3 col-sm-3">
+          <div class="id-card"></div>
+        </div>
+        <div class="col-md-8 col-sm-8">
+          <h3>ID-Kaart</h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
+        </div>
+        <div class="col-md-1 col-sm-1">
+          <i class="fa fa-chevron-down pull-right method-chevron"></i>
+        </div>
+      </div>
+    </div>
+    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="methodIDCard">
+      <div class="white hidden-xs method-block-collapsible">
+        <p>Sisesta kaart lugejasse ja vajuta "Sisene"</p>
+        <button class="primary" type="button" name="button">Sisene</button>
+      </div>
+    </div>
+
+    <div id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="method-block white row" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMob" aria-expanded="true" aria-controls="collapseMob">
+        <div class="col-md-3 col-sm-3">
+          <div class="mob-id"></div>
+        </div>
+        <div class="col-md-8 col-sm-8">
+          <h3>Mobiil-ID</h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
+        </div>
+        <div class="col-md-1 col-sm-1">
+          <i class="fa fa-chevron-down pull-right method-chevron"></i>
+        </div>
+      </div>
+    </div>
+    <div id="collapseMob" class="collapse" role="tabpanel" aria-labelledby="methodIDCard">
+      <div class="white hidden-xs method-block-collapsible">
+        <p>Sisesta kaart lugejasse ja vajuta "Sisene"</p>
+        <button class="primary" type="button" name="button">Sisene</button>
+      </div>
+    </div>
+
+    <a href="#" class="back-btn row">
+      <i class="fa fa-chevron-left fa-fw"></i>Tagasi teenusepakkuja juurde
+    </a>
+
+
   </div>
 
+
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="/js/script.js"></script>
 
 </body>
 

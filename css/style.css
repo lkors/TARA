@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #F7F4F0;
   color: #000;
@@ -11,6 +12,12 @@ p {
 
 .white {
   background-color: white; }
+
+.container {
+  max-width: 620px; }
+
+button.primary  {
+  background-color: blue; }
 
 header .header-bar {
   background-color: #4D4D4D;
@@ -34,11 +41,36 @@ header .logo-bar {
   background-color: #FFF; }
 
 .tara-logo {
-  background-image: url(/images/logo.svg);
+  background-image: url("/images/logo.svg");
   background-repeat: no-repeat;
   height: 48px; }
 
-.container {
-  max-width: 620px; }
+.method-block {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  padding: 0 15px 15px;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.35); }
+  .method-block .id-card {
+    background-image: url("/images/idkaart.svg");
+    background-repeat: no-repeat;
+    height: 67px;
+    margin-top: 2em; }
+  .method-block .mob-id {
+    background-image: url("/images/mobiilid.svg");
+    background-repeat: no-repeat;
+    height: 67px;
+    margin-top: 2em;
+    margin-left: 2em; }
+  .method-block .method-chevron {
+    margin-top: 3.5em; }
+
+.method-block-collapsible {
+  border-top: 1px rgba(0, 0, 0, 0.35) solid;
+  padding: 15px;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.35); }
+
+.back-btn {
+  color: #000; }
 
 /*# sourceMappingURL=style.css.map */
