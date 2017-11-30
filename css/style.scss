@@ -5,6 +5,7 @@ $black: #000;
 $white: #FFF;
 $green: #006833;
 $light-brown: #999999;
+$blue: #41598C;
 
 body {
   background-color: $background-color;
@@ -28,25 +29,42 @@ p {
   max-width: 620px;
 }
 
-button.primary {
-  background-color: blue;
+a {
+  color: $green;
+  text-decoration: none;
+  &:hover, &:focus {
+    color: darken($green, 5%);
+  }
 }
 
 ul {
-  list-style-type: none;
-
-  li {
-    line-height: 2;
-
-    a {
-      color: $green;
-      text-decoration: none;
-      &:hover, &:focus {
-        color: darken($green, 5%);
-      }
-    }
-  }
+  list-style: none;
 }
+
+button {
+  border-radius: 0;
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+}
+
+button.primary {
+  background-color: $blue;
+  color: $white;
+  height: 50px;
+line-height: 50px;
+padding: 0 20px;
+text-align: center;
+text-decoration: none;
+transition: background-color 0.5s ease-out 0s;
+@media all and (max-width:480px) {
+width: 100%;
+display:block;
+}
+}
+
+
+
 
 header {
   .header-bar {
@@ -56,9 +74,7 @@ header {
     button {
       height: 33px;
       background-color: $light-grey;
-      border-radius: 0;
       padding: 0 11px;
-
       &:hover {
         background-color: darken($light-grey, 5%);
       }
@@ -127,6 +143,10 @@ header {
   border-top: 1px rgba(0,0,0,0.35) solid;
   padding: 15px;
   box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.35);
+}
+
+#collapseOne .white div a {
+  margin-top: 3em;
 }
 
 .back-btn {
