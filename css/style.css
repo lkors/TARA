@@ -18,7 +18,7 @@ p {
 a {
   color: #006833;
   text-decoration: underline; }
-  a:hover, a:focus {
+  a:focus, a:hover {
     color: #004f26; }
 
 ul {
@@ -29,6 +29,9 @@ button {
   -webkit-appearance: none;
   border: none;
   background: none; }
+
+.text-black {
+  color: #000; }
 
 button.primary {
   background-color: #49639C;
@@ -41,11 +44,30 @@ button.primary {
   transition: background-color 0.5s ease-out 0s;
   border-radius: 1px;
   font-weight: 900;
-  margin-top: 20px; }
+  margin-top: 20px;
+  border-bottom: 3px solid #394d79; }
   @media all and (max-width: 480px) {
     button.primary {
       width: 100%;
       display: block; } }
+
+label {
+  font-size: 14px;
+  color: #000;
+  font-weight: 400; }
+
+input {
+  display: block;
+  padding: 9px;
+  background: #FFFFFF;
+  border: 2px solid #E6E6E6;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 1px;
+  width: 100%; }
+
+@media screen and (max-width: 766px) {
+  .label-input {
+    margin-bottom: 10px; } }
 
 header .header-bar {
   background-color: #4D4D4D;
@@ -90,18 +112,23 @@ header .logo-bar {
   .method-block .mob-id {
     background-image: url("/images/mobiilid.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     height: 67px;
     margin-top: 2em;
     margin-left: 2em; }
     @media screen and (max-width: 766px) {
       .method-block .mob-id {
-        margin-left: 0;
-        height: 40px; } }
+        margin-left: 0; } }
   .method-block .method-chevron {
     margin-top: 3.5em; }
     @media screen and (max-width: 766px) {
       .method-block .method-chevron {
         margin-top: 20px; } }
+    @media screen and (max-width: 480px) {
+      .method-block .method-chevron {
+        float: right;
+        margin-top: 0;
+        font-size: 14px; } }
 
 .block-hr {
   width: 100%;
@@ -125,8 +152,23 @@ header .logo-bar {
 #collapseOne .white div a {
   margin-top: 3em; }
 
-.back-btn {
-  color: #000; }
+#collapseMob > .white .method-block-collapsible > .row {
+  margin-left: 0;
+  margin-right: 0; }
+
+@media screen and (max-width: 766px) and (min-width: 480px) {
+  .col-xs-50 {
+    width: 50%;
+    display: inline;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left; } }
+
+@media screen and (max-width: 480px) {
+  .col-xs-50 {
+    text-align: center;
+    width: 100%;
+    float: none !important; } }
 
 footer {
   padding-bottom: 20px; }
@@ -139,6 +181,17 @@ footer {
     margin-left: 0;
     margin-right: 0; }
 
+.help-link {
+  padding-top: 2.3em; }
+  @media screen and (max-width: 480px) {
+    .help-link {
+      display: block;
+      text-align: center;
+      width: 100%; } }
+
+.icon-link {
+  text-decoration: none; }
+
 .eu-logo {
   background-image: url("/images/EU.svg");
   background-repeat: no-repeat;
@@ -147,6 +200,7 @@ footer {
   margin-top: 1.5em; }
 
 ul.footer-links {
+  padding-top: 7px;
   text-align: right;
   list-style-position: inside;
   padding-left: 0;
