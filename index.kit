@@ -4,54 +4,53 @@
 <!-- @include head, header -->
 
 <body>
-  <div id="wrap">
-    <div id="main" class="container clear-top">
-      <h3>Vali tuvastamismeetod</h3>
 
-      <div id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="container">
+    <h3>Vali tuvastamismeetod</h3>
 
-        <div class="method-block white row hidden-xs" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <div class="col-md-3 col-sm-3">
-            <div class="id-card"></div>
-          </div>
-          <div class="col-md-8 col-sm-8">
-            <h3>ID-Kaart</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
-          </div>
-          <div class="col-md-1 col-sm-1">
-            <i class="fa fa-chevron-down pull-right method-chevron"></i>
-          </div>
+    <div id="accordion" role="tablist" aria-multiselectable="true">
+
+      <div class="method-block white row hidden-xs accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <div class="col-md-3 col-sm-3">
+          <div class="id-card"></div>
         </div>
-        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="methodIDCard">
-          <div class="block-hr hidden-xs"></div>
-          <div class="white hidden-xs method-block-collapsible">
-            <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-6">
-                <p>Sisesta kaart lugejasse ja vajuta "Sisene"</p>
-                <button class="primary" type="button" name="button">Sisene</button>
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-6">
-                <a href="http://id.ee/index.php?id=35803" class="pull-right help-link">Abi id.ee-st</a>
-              </div>
+        <div class="col-md-8 col-sm-8">
+          <h3>ID-Kaart</h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
+        </div>
+        <div class="col-md-1 col-sm-1">
+          <i class="fa pull-right method-chevron fa-chevron-up"></i>
+        </div>
+      </div>
+      <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="methodIDCard" aria-expanded="false" style="height: 0px;">
+        <div class="block-hr hidden-xs"></div>
+        <div class="white hidden-xs method-block-collapsible">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <p>Sisesta kaart lugejasse ja vajuta "Sisene"</p>
+              <button class="primary" type="button" name="button">Sisene</button>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <a href="http://id.ee/index.php?id=35803" class="pull-right help-link">Abi id.ee-st</a>
             </div>
           </div>
         </div>
-
-        <div class="method-block white row" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMob" aria-expanded="true" aria-controls="collapseMob">
-          <div class="col-md-3 col-sm-3 col-xs-3">
-            <div class="mob-id"></div>
-          </div>
-          <div class="col-md-8 col-sm-8 col-xs-9">
-            <h3>Mobiil-ID</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
-          </div>
-          <div class="col-md-1 col-sm-1 hidden-xs">
-            <i class="fa fa-chevron-down pull-right method-chevron"></i>
-          </div>
-        </div>
-
       </div>
-      <div id="collapseMob" class="collapse" role="tabpanel" aria-labelledby="methodMobID">
+
+      <div class="method-block white row accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMob" aria-expanded="true" aria-controls="collapseMob">
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <div class="mob-id"></div>
+        </div>
+        <div class="col-md-8 col-sm-8 col-xs-9">
+          <h3>Mobiil-ID</h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
+        </div>
+        <div class="col-md-1 col-sm-1 hidden-xs">
+          <i class="fa pull-right method-chevron fa-chevron-down"></i>
+        </div>
+      </div>
+
+      <div id="collapseMob" class="collapse in" role="tabpanel" aria-labelledby="methodMobID" aria-expanded="true" style="">
         <div class="block-hr"></div>
         <div class="white method-block-collapsible">
           <div class="row">
@@ -71,21 +70,22 @@
               <button class="primary" type="button" name="button">Sisene</button>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-50">
-              <a href="http://id.ee/index.php?id=35803&group_id=1&item=203&crumbs=.203" class="pull-right help-link">Abi id.ee-st</a>
+              <a href="http://id.ee/index.php?id=35803&amp;group_id=1&amp;item=203&amp;crumbs=.203" class="pull-right help-link">Abi id.ee-st</a>
             </div>
           </div>
         </div>
       </div>
 
-      <a href="#" class="text-black row icon-link">
-      <i class="fa fa-chevron-left fa-fw"></i>Tagasi teenusepakkuja juurde
-    </a>
-
     </div>
-  </div>
+    <a href="#" class="text-black row icon-link">
+    <i class="fa fa-chevron-left fa-fw"></i>Tagasi teenusepakkuja juurde
+  </a>
 
-  <!-- @include scripts, footer-->
+
+    <!-- @include scripts, footer -->
+
   </div>
+  <!--container -->
 </body>
 
 </html>

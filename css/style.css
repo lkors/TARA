@@ -1,7 +1,20 @@
+html {
+  height: 100%;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
 body {
   background-color: #F7F4F0;
   color: #000;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  margin: 0;
+  padding-bottom: 12rem;
+  min-height: 100%; }
 
 h3 {
   font-weight: 900; }
@@ -90,6 +103,20 @@ header .logo-bar {
   padding: 12px 0;
   background-color: #FFF; }
 
+footer.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center; }
+  footer.footer hr {
+    border-top: 1px solid #999999;
+    margin-bottom: 5px; }
+  footer.footer .row {
+    margin-left: 0;
+    margin-right: 0; }
+
 .tara-logo {
   background-image: url("/images/logo.svg");
   background-repeat: no-repeat;
@@ -169,17 +196,6 @@ header .logo-bar {
     text-align: center;
     width: 100%;
     float: none !important; } }
-
-footer {
-  padding-bottom: 20px; }
-  footer #footer.container {
-    display: inline; }
-  footer hr {
-    border-top: 0.5px solid #999999;
-    margin-bottom: 5px; }
-  footer .row {
-    margin-left: 0;
-    margin-right: 0; }
 
 .help-link {
   padding-top: 2.3em; }

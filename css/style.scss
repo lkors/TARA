@@ -8,10 +8,26 @@ $green: #006833;
 $light-brown: #999999;
 $blue: #49639C;
 
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: $background-color;
   color: $black;
   font-family: 'Roboto', sans-serif;
+  position: relative;
+  margin: 0;
+  padding-bottom: 12rem;
+  min-height: 100%;
 }
 
 h3 {
@@ -129,6 +145,25 @@ header {
   }
 }
 
+
+footer.footer {
+  hr {
+    border-top: 1px solid $light-brown;
+    margin-bottom: 5px;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
 .tara-logo {
   background-image: url("/images/logo.svg");
   background-repeat: no-repeat;
@@ -224,31 +259,10 @@ header {
   }
 }
 
-footer {
-  padding-bottom: 20px;
-
-  #footer.container {
-    display: inline;
-  }
-
-  hr {
-    border-top: 0.5px solid $light-brown;
-    margin-bottom: 5px;
-  }
-
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
 
 .help-link {
 padding-top: 2.3em;
-// @media screen and (max-width: 766px) {
-// display: block;
-// text-align: center;
-// width: 50%;
-// }
+
 @media screen and (max-width: 480px) {
 display: block;
 text-align: center;
