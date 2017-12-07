@@ -67,16 +67,30 @@ button.primary {
 label {
   font-size: 14px;
   color: #000;
-  font-weight: 400; }
+  font-weight: 400;
+  display: table-caption; }
 
 input {
   display: block;
   padding: 9px;
-  background: #FFFFFF;
+  width: 100%;
+  background: #FFFFFF; }
+
+input, .input-group-addon {
   border: 2px solid #E6E6E6;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 1px;
-  width: 100%; }
+  border-radius: 1px; }
+
+.input-group-addon {
+  background: #E6E6E6;
+  color: #000; }
+
+.label-input.input-group[class*=col-] {
+  float: none;
+  padding-right: 15px;
+  padding-left: 15px; }
+  .label-input.input-group[class*=col-] label {
+    padding-left: 15px; }
 
 @media screen and (max-width: 766px) {
   .label-input {
