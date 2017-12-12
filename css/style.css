@@ -3,8 +3,8 @@ html {
   box-sizing: border-box; }
 
 *,
-*:before,
-*:after {
+*:after,
+*:before {
   box-sizing: inherit; }
 
 body {
@@ -76,7 +76,8 @@ input {
   width: 100%;
   background: #FFFFFF; }
 
-input, .input-group-addon {
+.input-group-addon,
+input {
   border: 2px solid #E6E6E6;
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.15);
   border-radius: 1px; }
@@ -116,6 +117,12 @@ header .header-bar {
 header .logo-bar {
   padding: 12px 0;
   background-color: #FFF; }
+  header .logo-bar p {
+    margin: 0;
+    line-height: 24px; }
+    @media screen and (max-width: 767px) {
+      header .logo-bar p {
+        margin-top: 1em; } }
 
 footer.footer {
   position: absolute;
@@ -170,6 +177,9 @@ footer.footer {
         float: right;
         margin-top: 0;
         font-size: 14px; } }
+
+.collapsing {
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.35); }
 
 .block-hr {
   width: 100%;
