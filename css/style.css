@@ -119,7 +119,7 @@ header .logo-bar {
   background-color: #FFF; }
   header .logo-bar p {
     margin: 0;
-    line-height: 24px; }
+    line-height: 48px; }
     @media screen and (max-width: 767px) {
       header .logo-bar p {
         margin-top: 1em; } }
