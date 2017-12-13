@@ -19,6 +19,9 @@ body {
 h3 {
   font-weight: 900; }
 
+h4 {
+  font-size: 21px; }
+
 p {
   font-size: 14px; }
 
@@ -45,6 +48,9 @@ button {
 
 .text-black {
   color: #000; }
+
+.text-red {
+  color: #FF0000; }
 
 button.primary {
   background-color: #49639C;
@@ -122,7 +128,9 @@ header .logo-bar {
     line-height: 48px; }
     @media screen and (max-width: 767px) {
       header .logo-bar p {
-        margin-top: 1em; } }
+        margin-top: 1em;
+        text-align: left;
+        line-height: 24px; } }
 
 footer.footer {
   position: absolute;
@@ -139,7 +147,7 @@ footer.footer {
     margin-right: 0; }
 
 .tara-logo {
-  background-image: url("/images/logo.svg");
+  background-image: url("/images/tara.svg");
   background-repeat: no-repeat;
   height: 48px; }
 
@@ -252,5 +260,10 @@ ul.footer-links {
     ul.footer-links {
       list-style: none;
       text-align: left; } }
+
+.error-box {
+  border: 2px solid #FF0000;
+  padding: 15px 20px;
+  margin: 0 15px 20px 15px; }
 
 /*# sourceMappingURL=style.css.map */

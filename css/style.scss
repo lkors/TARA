@@ -7,6 +7,7 @@ $white: #FFF;
 $green: #006833;
 $light-brown: #999999;
 $blue: #49639C;
+$red: #FF0000;
 
 html {
   height: 100%;
@@ -31,6 +32,10 @@ body {
 
 h3 {
   font-weight: 900;
+}
+
+h4 {
+  font-size: 21px;
 }
 
 p {
@@ -68,6 +73,10 @@ button {
 
 .text-black {
   color: $black;
+}
+
+.text-red {
+  color: $red;
 }
 
 button.primary {
@@ -167,6 +176,8 @@ header {
       line-height: 48px;
       @media screen and (max-width: 767px) {
         margin-top: 1em;
+        text-align: left;
+        line-height: 24px;
       }
     }
   }
@@ -191,7 +202,7 @@ footer.footer {
 }
 
 .tara-logo {
-  background-image: url("/images/logo.svg");
+  background-image: url("/images/tara.svg");
   background-repeat: no-repeat;
   height: 48px;
 }
@@ -325,4 +336,10 @@ ul.footer-links {
     list-style: none;
     text-align: left;
   }
+}
+
+.error-box {
+border: 2px solid $red;
+padding: 15px 20px;
+margin: 0 15px 20px 15px;;
 }
