@@ -1,1 +1,1 @@
-$("#accordion div").click(function(){$(this).find("i").toggleClass("fa-chevron-down fa-chevron-up")}),$("#accordion").click(function(c){$(".collapse").collapse("hide")});
+function toggleChevron(o){$(o.target).prev(".method-block").find("i").toggleClass("fa-chevron-up fa-chevron-down")}$("#accordion").on("hidden.bs.collapse",toggleChevron),$("#accordion").on("shown.bs.collapse",toggleChevron);
