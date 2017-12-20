@@ -73,6 +73,9 @@ button {
 
 .text-black {
   color: $black;
+  &:hover {
+    color: $black;
+  }
 }
 
 .text-red {
@@ -341,7 +344,8 @@ ul.footer-links {
 .error-box {
 border: 2px solid $red;
 padding: 15px 20px;
-margin: 0 15px 20px 15px;;
+margin: 0 15px 20px 15px;
+background-color: $white;
 }
 
 .panel {
@@ -350,5 +354,5 @@ margin: 0 15px 20px 15px;;
   border: none;
   border-radius: 0;
   -webkit-box-shadow: none;
-  box-shadow: none;  
+  box-shadow: none;
 }

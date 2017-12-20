@@ -48,6 +48,8 @@ button {
 
 .text-black {
   color: #000; }
+  .text-black:hover {
+    color: #000; }
 
 .text-red {
   color: #FF0000; }
@@ -264,7 +266,8 @@ ul.footer-links {
 .error-box {
   border: 2px solid #FF0000;
   padding: 15px 20px;
-  margin: 0 15px 20px 15px; }
+  margin: 0 15px 20px 15px;
+  background-color: #FFF; }
 
 .panel {
   margin-bottom: 0;
