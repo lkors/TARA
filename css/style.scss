@@ -159,8 +159,8 @@ header {
       font-size: 10px;
       text-decoration: none;
 
-      &:first-child {
-        padding-right: 18px;
+      &:last-child {
+        padding-left: 18px;
       }
     }
   }
