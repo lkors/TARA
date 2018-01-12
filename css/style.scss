@@ -105,7 +105,6 @@ label {
   font-size: 14px;
   color: $black;
   font-weight: 400;
-  display: table-caption;
 }
 
 input {
@@ -131,10 +130,6 @@ input {
   float: none;
   padding-right: 15px;
   padding-left: 15px;
-
-  label {
-    padding-left: 15px;
-  }
 }
 
 .label-input {
@@ -367,5 +362,5 @@ background-color: $white;
 }
 
 .icon-big {
-  width: 2em; 
+  width: 2em;
 }
